@@ -10,7 +10,6 @@
 
 <img src="https://komarev.com/ghpvc/?username=svumo&style=flat-square&color=00ff41&label=PROFILE+VIEWS" alt="Profile views" />
 <a href="https://danielpd.com"><img src="https://img.shields.io/badge/Portfolio-0d0d0d?style=flat-square&logo=googlechrome&logoColor=00ff41" alt="Portfolio" /></a>
-<a href="https://www.linkedin.com/in/daniel-deegan0/"><img src="https://img.shields.io/badge/LinkedIn-0d0d0d?style=flat-square&logo=linkedin&logoColor=00ff41" alt="LinkedIn" /></a>
 <a href="mailto:info@danielpd.com"><img src="https://img.shields.io/badge/Email-0d0d0d?style=flat-square&logo=maildotru&logoColor=00ff41" alt="Email" /></a>
 
 </div>
