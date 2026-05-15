@@ -31,4 +31,4 @@ jobs:
             body { background: #0d0d0d !important; }
             svg { background: #0d0d0d !important; }
             text, tspan { fill: #c9d1d9 !important; }
-            .title, h2, .calendar-title { fill: #00ff41 !important; color: #00ff41 !important; }
+            .title, h2, .calendar-title { fill: #14b8a6 !important; color: #14b8a6 !important; }
