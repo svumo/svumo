@@ -72,6 +72,6 @@ I work in cybersecurity, across the offensive and defensive sides, and I spend a
 
 <sub><a href="https://danielpd.com">danielpd.com</a></sub>
 
-<img src="https://komarev.com/ghpvc/?username=svumo&style=flat-square&color=14b8a6&label=v" width="1" height="1" alt="" />
+<img src="https://svumo-views.svumo.workers.dev/p.gif" width="1" height="1" alt="" />
 
 </div>
