@@ -10,7 +10,7 @@ dataset = "svumo_profile_views"
 
 [vars]
 # Not secret — your Cloudflare account id (Dashboard → right sidebar).
-CF_ACCOUNT_ID = "PUT_YOUR_ACCOUNT_ID_HERE"
+CF_ACCOUNT_ID = "e94da8f91d1d467ec70382a5d665db9c"
 
 # Secrets (set with `wrangler secret put <NAME>`, never commit them):
 #   STATS_KEY     -> any random string; required to read /stats
