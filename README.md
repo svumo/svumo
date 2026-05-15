@@ -16,12 +16,6 @@ I work in cybersecurity, across the offensive and defensive sides, and I spend a
 
 ---
 
-### What I Work On
-
-Offensive security and vulnerability discovery, digital forensics and malware analysis, risk and compliance work (ISO/IEC 27005, GDPR, PCI-DSS), identity and access management, and full-stack engineering with secure backends.
-
----
-
 ### Tools I Use
 
 **Security · Identity · Cloud**
