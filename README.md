@@ -106,7 +106,7 @@ work    => documented properly at danielpd.com
 
 <br/><br/>
 
-<img alt="GitHub metrics" src="metrics.svg" width="500" />
+<img alt="3D isometric commit calendar" src="isocalendar.svg" width="540" />
 
 </div>
 
