@@ -8,7 +8,6 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=svumo&style=flat-square&color=14b8a6&label=profile+views" alt="Profile views" />
 <a href="https://danielpd.com"><img src="https://img.shields.io/badge/Portfolio-0d0d0d?style=flat-square&logo=googlechrome&logoColor=14b8a6" alt="Portfolio" /></a>
 <a href="mailto:info@danielpd.com"><img src="https://img.shields.io/badge/Email-0d0d0d?style=flat-square&logo=maildotru&logoColor=14b8a6" alt="Email" /></a>
 
@@ -72,5 +71,7 @@ I work in cybersecurity, across the offensive and defensive sides, and I spend a
 ---
 
 <sub><a href="https://danielpd.com">danielpd.com</a></sub>
+
+<img src="https://komarev.com/ghpvc/?username=svumo&style=flat-square&color=14b8a6&label=v" width="1" height="1" alt="" />
 
 </div>
