@@ -1,10 +1,6 @@
 <div align="center">
 
-<img src="header.svg" alt="danielpd" width="760" />
-
-<a href="https://danielpd.com">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1200&color=14b8a6&background=00000000&center=true&vCenter=true&width=560&lines=still+learning;building+and+breaking%2C+mostly+learning;always+a+work+in+progress" alt="" />
-</a>
+<img src="header.svg" alt="danielpd" width="320" />
 
 <br/>
 
