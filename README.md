@@ -1,14 +1,14 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,55:001a0d,100:00351a&height=200&section=header&text=Daniel%20Deegan&fontSize=56&fontColor=00ff41&fontAlignY=37&desc=Cybersecurity%20Engineer%20%C2%B7%20IAM%20Specialist&descSize=18&descColor=c9d1d9&descAlignY=58&animation=fadeIn" alt="Daniel Deegan" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,55:001a0d,100:00351a&height=190&section=header&text=danielpd&fontSize=60&fontColor=00ff41&fontAlignY=38&desc=cybersecurity%20%26%20engineering&descSize=17&descColor=c9d1d9&descAlignY=60&animation=fadeIn" alt="danielpd" />
 
 <a href="https://danielpd.com">
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=21&pause=900&color=00FF41&background=00000000&center=true&vCenter=true&width=620&lines=Penetration+Tester;Digital+Forensics+%26+Malware+Analyst;Threat+Modelling+%26+Risk+Assessment;Identity+%26+Access+Management;Full-Stack+Builder" alt="Roles" />
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1200&color=00FF41&background=00000000&center=true&vCenter=true&width=560&lines=still+learning;building+and+breaking%2C+mostly+learning;always+a+work+in+progress" alt="" />
 </a>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=svumo&style=flat-square&color=00ff41&label=PROFILE+VIEWS" alt="Profile views" />
+<img src="https://komarev.com/ghpvc/?username=svumo&style=flat-square&color=00ff41&label=profile+views" alt="Profile views" />
 <a href="https://danielpd.com"><img src="https://img.shields.io/badge/Portfolio-0d0d0d?style=flat-square&logo=googlechrome&logoColor=00ff41" alt="Portfolio" /></a>
 <a href="mailto:info@danielpd.com"><img src="https://img.shields.io/badge/Email-0d0d0d?style=flat-square&logo=maildotru&logoColor=00ff41" alt="Email" /></a>
 
@@ -18,27 +18,27 @@
 
 ### `$ whoami`
 
-I work both sides of the line: breaking systems through penetration testing, forensics and malware analysis, then architecting the identity and access controls that lock them back down. When a problem needs more than a report, I ship the full-stack platform that solves it.
+I work in cybersecurity, across the offensive and defensive sides, and I spend a fair bit of time around identity and access management. I also build full-stack web things when a project calls for it. Mostly I'm just trying to keep learning.
 
 ```bash
-focus   => offensive + defensive security, IAM, full-stack
-mindset => if I set my mind to it, I can master it
-work    => documented properly at danielpd.com
+focus    => security (offensive + defensive), IAM, some full-stack
+approach => keep learning, stay curious
+work     => collected at danielpd.com
 ```
 
 ---
 
-### Focus Areas
+### What I Work On
 
-- **Offensive Security** : penetration testing, vulnerability discovery & exploitation, red-team methodology
-- **Digital Forensics & Malware Analysis** : reverse engineering, incident reconstruction, IOC development
-- **Risk & Compliance** : ISO/IEC 27005, GDPR and PCI-DSS aligned risk assessment
-- **Identity & Access Management** : scalable, security-first IAM and zero-trust architecture
-- **Full-Stack Engineering** : production web platforms with secure backends and payment integration
+- **Offensive security** : penetration testing and vulnerability discovery
+- **Digital forensics & malware analysis** : reverse engineering and incident work
+- **Risk & compliance** : ISO/IEC 27005, GDPR and PCI-DSS
+- **Identity & access management**
+- **Full-stack engineering** : web platforms with secure backends
 
 ---
 
-### Arsenal
+### Tools I Use
 
 <div align="center">
 
@@ -83,29 +83,29 @@ work    => documented properly at danielpd.com
 
 ---
 
-### Selected Work
+### Some of My Work
 
-| Project | Domain |
+| Project | Area |
 |---|---|
-| **Holoscene.co.uk** : production web platform with Stripe payments & admin backend | Full-Stack |
-| **ISO/IEC 27005 Risk Assessment** : quantitative risk model for a UK university | Risk & Compliance |
-| **Malware Forensics** : reverse-engineered a packed IRC bot end to end | Forensics |
-| **Honeynet Research** : 1.16M attack events captured and turned into threat intel | Security Research |
-| **VDE** : memory-corruption exploitation mapped to MITRE CWE/CAPEC | Offensive Security |
+| **Holoscene.co.uk** : a site with Stripe payments and an admin backend | Full-stack |
+| **ISO/IEC 27005 risk assessment** : a risk model for a UK university | Risk & compliance |
+| **Malware forensics** : reverse-engineered a packed IRC bot | Forensics |
+| **Honeynet research** : collected ~1.16M attack events into threat intel | Security research |
+| **VDE** : memory-corruption exploitation mapped to MITRE CWE/CAPEC | Offensive security |
 
-> Full case studies, write-ups and live demos at **[danielpd.com](https://danielpd.com)**
+> More detail on these at **[danielpd.com](https://danielpd.com)**
 
 ---
 
 <div align="center">
 
-### Commits & Progress
+### Commits
 
 <img alt="Contribution snake" src="https://raw.githubusercontent.com/svumo/svumo/output/snake.svg" width="780" />
 
 <br/><br/>
 
-<img alt="3D isometric commit calendar" src="isocalendar.svg" width="540" />
+<img alt="Commit calendar" src="isocalendar.svg" width="540" />
 
 </div>
 
@@ -113,7 +113,7 @@ work    => documented properly at danielpd.com
 
 <div align="center">
 
-<sub>Built and broken with intent · <a href="https://danielpd.com">danielpd.com</a></sub>
+<sub><a href="https://danielpd.com">danielpd.com</a></sub>
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00351a,55:001a0d,100:000000&height=110&section=footer" alt="" />
 
