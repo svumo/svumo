@@ -1,0 +1,17 @@
+name = "svumo-views"
+main = "src/index.js"
+compatibility_date = "2024-11-01"
+workers_dev = true
+
+# Per-day view tracking. The dataset is created automatically on first write.
+[[analytics_engine_datasets]]
+binding = "AE"
+dataset = "svumo_profile_views"
+
+[vars]
+# Not secret — your Cloudflare account id (Dashboard → right sidebar).
+CF_ACCOUNT_ID = "PUT_YOUR_ACCOUNT_ID_HERE"
+
+# Secrets (set with `wrangler secret put <NAME>`, never commit them):
+#   STATS_KEY     -> any random string; required to read /stats
+#   CF_API_TOKEN  -> token with "Account Analytics: Read" permission
