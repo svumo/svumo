@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,55:001a0d,100:00351a&height=190&section=header&text=danielpd&fontSize=60&fontColor=00ff41&fontAlignY=38&desc=cybersecurity%20%26%20engineering&descSize=17&descColor=c9d1d9&descAlignY=60&animation=fadeIn" alt="danielpd" />
+<img src="header.svg" alt="danielpd" width="760" />
 
 <a href="https://danielpd.com">
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=18&pause=1200&color=00FF41&background=00000000&center=true&vCenter=true&width=560&lines=still+learning;building+and+breaking%2C+mostly+learning;always+a+work+in+progress" alt="" />
@@ -12,35 +12,21 @@
 <a href="https://danielpd.com"><img src="https://img.shields.io/badge/Portfolio-0d0d0d?style=flat-square&logo=googlechrome&logoColor=00ff41" alt="Portfolio" /></a>
 <a href="mailto:info@danielpd.com"><img src="https://img.shields.io/badge/Email-0d0d0d?style=flat-square&logo=maildotru&logoColor=00ff41" alt="Email" /></a>
 
-</div>
-
 ---
 
 ### `$ whoami`
 
 I work in cybersecurity, across the offensive and defensive sides, and I spend a fair bit of time around identity and access management. I also build full-stack web things when a project calls for it. Mostly I'm just trying to keep learning.
 
-```bash
-focus    => security (offensive + defensive), IAM, some full-stack
-approach => keep learning, stay curious
-work     => collected at danielpd.com
-```
-
 ---
 
 ### What I Work On
 
-- **Offensive security** : penetration testing and vulnerability discovery
-- **Digital forensics & malware analysis** : reverse engineering and incident work
-- **Risk & compliance** : ISO/IEC 27005, GDPR and PCI-DSS
-- **Identity & access management**
-- **Full-stack engineering** : web platforms with secure backends
+Offensive security and vulnerability discovery, digital forensics and malware analysis, risk and compliance work (ISO/IEC 27005, GDPR, PCI-DSS), identity and access management, and full-stack engineering with secure backends.
 
 ---
 
 ### Tools I Use
-
-<div align="center">
 
 **Security · Identity · Cloud**
 
@@ -49,13 +35,13 @@ work     => collected at danielpd.com
 ![Wireshark](https://img.shields.io/badge/Wireshark-0d0d0d?style=flat-square&logo=wireshark&logoColor=00ff41)
 ![Kali Linux](https://img.shields.io/badge/Kali_Linux-0d0d0d?style=flat-square&logo=kalilinux&logoColor=00ff41)
 ![IDA Pro](https://img.shields.io/badge/IDA_Pro-0d0d0d?style=flat-square&logoColor=00ff41)
-![Nmap](https://img.shields.io/badge/Nmap-0d0d0d?style=flat-square&logo=nmap&logoColor=00ff41)
+![Nmap](https://img.shields.io/badge/Nmap-0d0d0d?style=flat-square&logoColor=00ff41)
 ![ELK Stack](https://img.shields.io/badge/ELK_Stack-0d0d0d?style=flat-square&logo=elasticstack&logoColor=00ff41)
 ![Okta](https://img.shields.io/badge/Okta-0d0d0d?style=flat-square&logo=okta&logoColor=00ff41)
-![CrowdStrike](https://img.shields.io/badge/CrowdStrike-0d0d0d?style=flat-square&logo=crowdstrike&logoColor=00ff41)
-![Kolide](https://img.shields.io/badge/Kolide-0d0d0d?style=flat-square&logoColor=00ff41)
+![CrowdStrike](https://img.shields.io/badge/CrowdStrike-0d0d0d?style=flat-square&logoColor=00ff41)
+![osquery](https://img.shields.io/badge/osquery-0d0d0d?style=flat-square&logoColor=00ff41)
 ![AWS](https://img.shields.io/badge/AWS-0d0d0d?style=flat-square&logo=amazonwebservices&logoColor=00ff41)
-![Azure](https://img.shields.io/badge/Azure-0d0d0d?style=flat-square&logo=microsoftazure&logoColor=00ff41)
+![Azure](https://img.shields.io/badge/Azure-0d0d0d?style=flat-square&logoColor=00ff41)
 ![Google Workspace](https://img.shields.io/badge/Google_Workspace-0d0d0d?style=flat-square&logo=google&logoColor=00ff41)
 ![Claude](https://img.shields.io/badge/Claude_/_Anthropic-0d0d0d?style=flat-square&logo=anthropic&logoColor=00ff41)
 
@@ -74,30 +60,12 @@ work     => collected at danielpd.com
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-0d0d0d?style=flat-square&logo=postgresql&logoColor=00ff41)
 ![MySQL](https://img.shields.io/badge/MySQL-0d0d0d?style=flat-square&logo=mysql&logoColor=00ff41)
 ![Redis](https://img.shields.io/badge/Redis-0d0d0d?style=flat-square&logo=redis&logoColor=00ff41)
-![VS Code](https://img.shields.io/badge/VS_Code-0d0d0d?style=flat-square&logo=visualstudiocode&logoColor=00ff41)
+![VS Code](https://img.shields.io/badge/VS_Code-0d0d0d?style=flat-square&logo=vscodium&logoColor=00ff41)
 ![Git](https://img.shields.io/badge/Git-0d0d0d?style=flat-square&logo=git&logoColor=00ff41)
 ![Docker](https://img.shields.io/badge/Docker-0d0d0d?style=flat-square&logo=docker&logoColor=00ff41)
 ![Linux](https://img.shields.io/badge/Linux-0d0d0d?style=flat-square&logo=linux&logoColor=00ff41)
 
-</div>
-
 ---
-
-### Some of My Work
-
-| Project | Area |
-|---|---|
-| **Holoscene.co.uk** : a site with Stripe payments and an admin backend | Full-stack |
-| **ISO/IEC 27005 risk assessment** : a risk model for a UK university | Risk & compliance |
-| **Malware forensics** : reverse-engineered a packed IRC bot | Forensics |
-| **Honeynet research** : collected ~1.16M attack events into threat intel | Security research |
-| **VDE** : memory-corruption exploitation mapped to MITRE CWE/CAPEC | Offensive security |
-
-> More detail on these at **[danielpd.com](https://danielpd.com)**
-
----
-
-<div align="center">
 
 ### Commits
 
@@ -107,14 +75,8 @@ work     => collected at danielpd.com
 
 <img alt="Commit calendar" src="isocalendar.svg" width="540" />
 
-</div>
-
 ---
 
-<div align="center">
-
 <sub><a href="https://danielpd.com">danielpd.com</a></sub>
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00351a,55:001a0d,100:000000&height=110&section=footer" alt="" />
 
 </div>
