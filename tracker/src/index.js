@@ -18,6 +18,7 @@ const NO_CACHE = {
   "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
   Pragma: "no-cache",
   Expires: "0",
+  "Access-Control-Allow-Origin": "*",
 };
 
 export default {
@@ -43,7 +44,7 @@ export default {
     // --- private stats (per day, last 30 days) --------------------------
     if (url.pathname === "/stats") {
       if (url.searchParams.get("key") !== env.STATS_KEY) {
-        return new Response("forbidden\n", { status: 403 });
+        return new Response("forbidden\n", { status: 403, headers: NO_CACHE });
       }
 
       const sql = `
