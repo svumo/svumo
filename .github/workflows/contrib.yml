@@ -1,0 +1,102 @@
+name: Contribution graph
+
+# Alternates the single contrib slot between:
+#   - Platane/snk    (flat animated snake, teal palette)
+#   - yoshi389111/github-profile-3d-contrib  (3D isometric bars)
+# Decided each run by `github.run_number % 2`.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      style:
+        description: "Override style (auto = alternate by date)"
+        required: false
+        default: auto
+        type: choice
+        options: [auto, snake, "3d"]
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: write
+
+jobs:
+  contrib:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Decide style
+        id: pick
+        run: |
+          OVERRIDE="${{ inputs.style }}"
+          if [ "$OVERRIDE" = "snake" ] || [ "$OVERRIDE" = "3d" ]; then
+            STYLE="$OVERRIDE"
+            echo "Override: $STYLE"
+          else
+            DAY=$(date +%d | sed 's/^0//')
+            if [ $(( DAY % 2 )) -eq 0 ]; then STYLE=snake; else STYLE=3d; fi
+            echo "Auto (day $DAY): $STYLE"
+          fi
+          echo "style=$STYLE" >> "$GITHUB_OUTPUT"
+          [ "$STYLE" = "snake" ] && echo "🐍 SNAKE this run" || echo "🧊 3D this run"
+
+      - name: Prep dist
+        run: mkdir -p dist
+
+      # ------------------------- SNAKE -------------------------
+      - name: Generate snake
+        if: steps.pick.outputs.style == 'snake'
+        uses: Platane/snk@v3
+        with:
+          github_user_name: svumo
+          outputs: |
+            dist/contrib.svg?color_snake=%2314b8a6&color_dots=%230d0d0d,%23042f2a,%230a7068,%230f9d8f,%2314b8a6
+
+      # ------------------------ 3D BARS ------------------------
+      - name: Checkout (for 3D action)
+        if: steps.pick.outputs.style == '3d'
+        uses: actions/checkout@v4
+
+      - name: Generate 3D contribution graph
+        if: steps.pick.outputs.style == '3d'
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: svumo
+
+      - name: Move 3D output into dist
+        if: steps.pick.outputs.style == '3d'
+        run: |
+          set -e
+          mkdir -p dist
+          echo "Workspace svgs:"; find . -maxdepth 3 -name '*.svg' -not -path './dist/*' -not -path './.git/*' | head
+          # Prefer a dark/green variant if produced, otherwise take any svg the action made
+          for cand in \
+            profile-3d-contrib/profile-green-animate.svg \
+            profile-3d-contrib/profile-south-season-animate.svg \
+            profile-3d-contrib/profile-night-green.svg \
+            profile-3d-contrib/profile-night-view.svg \
+            profile-3d-contrib.svg ; do
+            if [ -f "$cand" ]; then cp "$cand" dist/contrib.svg; echo "picked: $cand"; break; fi
+          done
+          # Fallback: any .svg under profile-3d-contrib/, then any in repo root
+          if [ ! -f dist/contrib.svg ]; then
+            first=$(find profile-3d-contrib -maxdepth 1 -name '*.svg' 2>/dev/null | head -1)
+            [ -n "$first" ] && cp "$first" dist/contrib.svg && echo "picked fallback: $first"
+          fi
+          if [ ! -f dist/contrib.svg ]; then
+            first=$(find . -maxdepth 1 -name '*.svg' 2>/dev/null | head -1)
+            [ -n "$first" ] && cp "$first" dist/contrib.svg && echo "picked root fallback: $first"
+          fi
+          [ -f dist/contrib.svg ] || { echo "::error::no svg produced by 3D action"; exit 1; }
+          ls -la dist
+
+      # ------------------------ PUBLISH ------------------------
+      - name: Publish to output branch
+        uses: crazy-max/ghaction-github-pages@v4
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
