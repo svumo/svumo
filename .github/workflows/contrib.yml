@@ -106,7 +106,7 @@ jobs:
             --jq '.data.user.contributionsCollection | .totalCommitContributions + .restrictedContributionsCount')
           THIS_F=$(echo "$THIS" | sed -e ':a' -e 's/\B[0-9]\{3\}\>/,&/' -e 'ta')
           echo "this year: $THIS_F"
-          cat > dist/commits.svg <<SVG
+          cat > dist/commit-count.svg <<SVG
           <svg xmlns="http://www.w3.org/2000/svg" width="360" height="36" viewBox="0 0 360 36" role="img" aria-label="$THIS_F commits in $YEAR">
           <text x="180" y="23" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="16" fill="#8b949e"><tspan fill="#14b8a6" font-weight="700">$THIS_F</tspan> commits in $YEAR</text>
           </svg>
