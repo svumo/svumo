@@ -64,7 +64,7 @@ I work in cybersecurity, across the offensive and defensive sides, and I spend a
 
 ### Commits
 
-<img alt="Commits this year" src="https://raw.githubusercontent.com/svumo/svumo/refs/heads/output/commits.svg" />
+<img alt="Commits this year" src="https://raw.githubusercontent.com/svumo/svumo/refs/heads/output/commit-count.svg" />
 
 <img alt="Contribution graph (alternates between snake and 3D each cycle)" src="https://raw.githubusercontent.com/svumo/svumo/output/contrib.svg" width="780" />
 
