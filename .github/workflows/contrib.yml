@@ -93,29 +93,22 @@ jobs:
           ls -la dist
 
       # ---------------------- COMMIT COUNTS ----------------------
-      # One-line SVG: commits this year and all time. Private commits are
-      # included via restrictedContributionsCount (public on this profile).
-      - name: Commit counts
+      # One-line SVG: commits this year. Private commits are included via
+      # restrictedContributionsCount (public on this profile).
+      - name: Commit count
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          Q='query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions restrictedContributionsCount contributionYears}}}'
-          count() {
-            gh api graphql -f query="$Q" -F login=svumo -F from="$1-01-01T00:00:00Z" -F to="$1-12-31T23:59:59Z" \
-              --jq '.data.user.contributionsCollection | .totalCommitContributions + .restrictedContributionsCount'
-          }
+          Q='query($login:String!,$from:DateTime!,$to:DateTime!){user(login:$login){contributionsCollection(from:$from,to:$to){totalCommitContributions restrictedContributionsCount}}}'
           YEAR=$(date -u +%Y)
-          YEARS=$(gh api graphql -f query="$Q" -F login=svumo -F from="$YEAR-01-01T00:00:00Z" -F to="$YEAR-12-31T23:59:59Z" \
-            --jq '.data.user.contributionsCollection.contributionYears[]')
-          THIS=$(count "$YEAR"); ALL=0
-          for y in $YEARS; do ALL=$(( ALL + $(count "$y") )); done
-          fmt() { echo "$1" | sed -e ':a' -e 's/\B[0-9]\{3\}\>/,&/' -e 'ta'; }
-          THIS_F=$(fmt "$THIS"); ALL_F=$(fmt "$ALL")
-          echo "this year: $THIS_F, all time: $ALL_F"
+          THIS=$(gh api graphql -f query="$Q" -F login=svumo -F from="$YEAR-01-01T00:00:00Z" -F to="$YEAR-12-31T23:59:59Z" \
+            --jq '.data.user.contributionsCollection | .totalCommitContributions + .restrictedContributionsCount')
+          THIS_F=$(echo "$THIS" | sed -e ':a' -e 's/\B[0-9]\{3\}\>/,&/' -e 'ta')
+          echo "this year: $THIS_F"
           cat > dist/commits.svg <<SVG
-          <svg xmlns="http://www.w3.org/2000/svg" width="560" height="36" viewBox="0 0 560 36" role="img" aria-label="$THIS_F commits in $YEAR, $ALL_F all time">
-          <text x="280" y="23" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="16" fill="#8b949e"><tspan fill="#14b8a6" font-weight="700">$THIS_F</tspan> commits in $YEAR<tspan dx="14" fill="#6e7681">·</tspan><tspan dx="14" fill="#14b8a6" font-weight="700">$ALL_F</tspan> all time</text>
+          <svg xmlns="http://www.w3.org/2000/svg" width="360" height="36" viewBox="0 0 360 36" role="img" aria-label="$THIS_F commits in $YEAR">
+          <text x="180" y="23" text-anchor="middle" font-family="ui-monospace,SFMono-Regular,'JetBrains Mono',Menlo,Consolas,monospace" font-size="16" fill="#8b949e"><tspan fill="#14b8a6" font-weight="700">$THIS_F</tspan> commits in $YEAR</text>
           </svg>
           SVG
 
