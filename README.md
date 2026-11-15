@@ -6,7 +6,7 @@
 
 ### `$ whoami`
 
-I work in cybersecurity, across the offensive and defensive sides, and I spend a fair bit of time around identity and access management. I also build full-stack web things when a project calls for it. Mostly I'm just trying to keep learning.
+cybersecengineer, 
 
 ---
 
